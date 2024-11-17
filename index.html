@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Fernandes</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-image">
+        <header class="header">
+            <a href="#home" class="logo">
+                DANIEL<span>FERNANDES</span>
+            </a>
+            
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+    </div>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1><span class="shine">Daniel Fernandes</span></h1>
+            <h3>Data Science Enthusiast</h3>
+
+            <div class="typing-container">
+                <span id="typed-text"></span>
+                <span class="cursor">|</span>
+            </div>
+        <br>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/fernandesss-s/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/fernandes-s" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="heading">About</h2>
+    
+        <div class="about-content flex">
+            <div class="about-img">
+                <img src="images/Profile Picture.png" alt="Daniel's Image">
+            </div>
+            <div class="about-text">
+                <p>My journey has been about discovery and growth, much like a data set waiting to be explored...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="services-container">
+            <!-- DAFT.ie PROJECT -->
+            <div class="service-box">
+                <img src="images/daft.ie.webp" alt="DAFT.ie Project Image">
+                <div class="service-info">
+                    <h4 class="desktop-title">
+                        <a href="https://github.com/fernandes-s/Daft_ie" target="_blank">DAFT.ie House Price Prediction</a>
+                    </h4>
+                    <p>Analyzing house price predictions with advanced data modeling.</p>
+                </div>
+            </div>
+    
+            <!-- Insurance Cost Analysis PROJECT -->
+            <div class="service-box">
+                <img src="images/insurance.cost.webp" alt="Insurance Cost Analysis Image">
+                <div class="service-info">
+                    <h4 class="desktop-title">
+                        <a href="https://github.com/fernandes-s/insurance_cost_analysis" target="_blank">Insurance Cost Analysis</a>
+                    </h4>
+                    <p>Predicting insurance costs using statistical and machine learning models.</p>
+                </div>
+            </div>
+    
+            <!-- Craving it Database PROJECT -->
+            <div class="service-box">
+                <img src="images/craving.it.webp" alt="Craving It Database Project Image">
+                <div class="service-info">
+                    <h4 class="desktop-title">
+                        <a href="https://github.com/fernandes-s/Craving-IT-DB" target="_blank">Craving It Database</a>
+                    </h4>
+                    <p>Optimizing data integration for inventory and sales management.</p>
+                </div>
+            </div>
+    
+            <!-- Credit Union PROJECT -->
+            <div class="service-box">
+                <img src="images/credit.union.webp" alt="Credit Union Project Image">
+                <div class="service-info">
+                    <h4 class="desktop-title">
+                        <a href="https://github.com/fernandes-s/Credit_Union" target="_blank">Credit Union System</a>
+                    </h4>
+                    <p>Building a robust database system for managing financial operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+    
+        <form action="#" method="post">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+    
+        <form action="https://formspree.io/f/mqaklkob" method="post">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/fernandesss-s/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/fernandes-s" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+        <p class="copyright">&copy; Daniel Fernandes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
