@@ -253,79 +253,11 @@ span{
     text-align: center;
     margin-bottom: 2rem;
 }
-.publications {
-    padding: 2rem 15px; /* Alinha o padding ao da seção about */
-    background: var(--second-bg-color);
-}
-.publications h2 {
-    margin-bottom: 2rem !important;
-    margin-top: 0 !important; /* Reduz a margem superior */
-    font-size: 3rem; /* Ajuste o tamanho da fonte para corresponder ao about */
-    font-weight: bold; /* Ajuste o peso da fonte para corresponder ao about */
-}
-.timeline-items{
-    display: flex;
-    flex-direction: column; /* Faz as caixas ficarem uma abaixo da outra */
-    align-items: center;    /* Centraliza as caixas horizontalmente */
-    max-width: 1200px;
-    margin: auto;
-    position: relative;
-}
-.timeline-items ::before{
-    content: none;
-    position: absolute;
-    width: 5px;
-    height: 100%;
-    background-color: var(--main-color);
-}
-.timeline-item{
-    margin-bottom: 60px;
-    width: 100%;
-    position: relative;
-}
-.timeline-item:nth-child(odd),
-.timeline-item:nth-child(even){
-    padding: 0; /* Remove padding lateral */
-    text-align: center; /* Centraliza o conteúdo dentro de cada caixa */
-}
-.timeline-content{
-    text-align: center; /* Centraliza o texto dentro da caixa */
-    margin: 0 auto;     /* Centraliza a própria caixa se ela tiver largura fixa */
-    padding: 30px 50px;
-    background-color: var(--bg-color);
-    border: 3px solid var(--main-color);
-    border-radius: 4rem;
-    box-shadow: 0 0 10px var(--main-color);
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-.timeline-content h3{
-    font-size: 20px;
-    color: #ff00c8e0;
-    margin: 0 0 10px;
-    font-weight: 600;
-}
-.timeline-content p{
-    color: white;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 22px;
-}
-::-webkit-scrollbar {
-    width: 5px;
-}
-::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
-}
-::-webkit-scrollbar-track {
-    background-color: var(--bg-color);
-    width: 40px;
-}
 
 @media (hover: hover){
     .services{
         background: var(--bg-color);
-        color: #5c595b;
+        color: #7d7171;
     }
     .services h2{
         margin-bottom: 5rem;
@@ -566,7 +498,7 @@ span{
     100% { opacity: 1; }
 }
 .paper-link {
-    color: #f8b2e3c2; /* Define a cor rosa para o link */
+    color: #db5656c2; /* Define a cor rosa para o link */
     text-decoration: none; /* Remove o sublinhado do link, se desejado */
     font-weight: bold; /* Opcional: deixa o link em negrito */
     transition: color 0.3s ease-in-out; /* Suave transição ao passar o mouse */
@@ -607,26 +539,31 @@ section {
     }
 
     .services-container {
-        display: grid; /* Mantém o grid para a versão mobile */
-        grid-template-columns: 1fr; /* Uma coluna na versão mobile */
-        gap: 1.5rem; /* Espaço entre as caixas */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        padding: 2rem 0;
     }
-
+    
     .service-box {
-        height: auto; /* Ajusta a altura ao conteúdo */
-        border-radius: 1.5rem; /* Bordas arredondadas */
-        padding: 1rem; /* Espaço interno */
-        position: relative;
-        transition: none; /* Remove transições */
-        pointer-events: none; /* Desabilita interações */
+        background-color: #1a1a1a;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
-
+    
     .service-box img {
-        width: 100%; /* Imagem ocupa toda a largura */
-        height: auto; /* Altura ajusta automaticamente */
-        border-radius: 1.5rem; /* Bordas arredondadas para as imagens */
-        object-fit: cover; /* Cobre o espaço disponível */
-        pointer-events: none; /* Desabilita hover na imagem */
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .service-box h4.project-title {
+        font-size: 1.8rem;
+        color: #e63946;
+        margin: 1rem 0;
     }
 
     /* Remover informações de serviço ao passar o mouse */
@@ -652,7 +589,7 @@ section {
 
     .mobile-title {
         font-size: 5rem; /* Aumentado para 5rem */
-        color: #ff00b3c2; /* Cor principal */
+        color: #e63946; /* Cor principal */
         text-align: center; /* Centraliza o título */
         margin-bottom: 0.5rem; /* Espaçamento */
         text-decoration: none; /* Remove o sublinhado do link */
@@ -660,7 +597,7 @@ section {
     }
 
     .mobile-title a {
-        color: #ff00b3c2 !important; /* Define a cor do link */
+        color: #e63946 !important; /* Define a cor do link */
         text-decoration: none; /* Remove o sublinhado do link */
     }
 
@@ -672,10 +609,10 @@ section {
     }
 
     .more-info {
-        font-size: 4rem; /* Aumentado para 4rem */
+        font-size: 1.8rem; /* Aumentado para 4rem */
         text-align: center; /* Centraliza o texto */
         margin-top: 1rem; /* Espaçamento acima */
-        color: #ff00b3c2 !important; /* Cor do texto */
+        color: #e63946 !important; /* Cor do texto */
         text-decoration: none; /* Remove sublinhado do link */
         pointer-events: auto; /* Habilita eventos para o link */
         display: block;
