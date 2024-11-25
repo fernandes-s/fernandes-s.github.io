@@ -25,6 +25,7 @@ A collection of my top projects showcasing my skills in:
 - **Web Development**
 
 Featured projects include:
+0. **Loan Default Prediction** - Predicting loan defaults using machine learning models.
 1. **Daft.ie Analysis** - Predicting house prices with regression models and statistical insights.
 2. **Insurance Cost Analysis** - Exploratory data analysis and predictive modeling.
 3. **Craving It Database System** - SQL database management for inventory and sales optimization.
